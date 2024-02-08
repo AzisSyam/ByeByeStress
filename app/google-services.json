@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "875999413570",
+    "project_id": "bye-bye-stress-6a586",
+    "storage_bucket": "bye-bye-stress-6a586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875999413570:android:a26809baf379a62326b4db",
+        "android_client_info": {
+          "package_name": "com.pkm.byebyestress"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6gcVsPzCIkFgXpwhRoP4ggGPoqFn7VMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

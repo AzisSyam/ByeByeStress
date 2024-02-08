@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
   <!-- Base application theme. -->
   <style name="Base.Theme.ByeByeStress" parent="Theme.Material3.DayNight.NoActionBar">
-    <!-- Customize your light theme here. -->
-    <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <item name="colorPrimary">@color/primary_color</item>
+    <item name="android:windowActionBar">false</item>
+  </style>
+
+
+  <style name="MainActivityTheme" parent="Base.Theme.ByeByeStress">
+    <item name="android:navigationBarColor">@color/button_nav</item>
+
   </style>
 
   <style name="Theme.ByeByeStress" parent="Base.Theme.ByeByeStress" />

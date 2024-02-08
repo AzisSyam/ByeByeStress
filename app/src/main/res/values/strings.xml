@@ -1,3 +1,13 @@
 <resources>
   <string name="app_name">Bye Bye Stress</string>
+  <string name="title_activity_main">MainActivity</string>
+  <string name="title_home">Home</string>
+  <string name="title_stress_tes">Cek Stress</string>
+  <string name="title_chat">Chat</string>
+  <string name="title_profile">Akun</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="title_activity_tes">TesActivity</string>
+  <string name="title_dashboard">Dashboard</string>
+  <string name="title_notifications">Notifications</string>
 </resources>
