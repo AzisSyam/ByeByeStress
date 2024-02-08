@@ -42,26 +42,13 @@
 
   <ImageView
     android:id="@+id/illustration"
-    android:layout_width="630dp"
-    android:layout_height="630dp"
+    android:layout_width="600dp"
+    android:layout_height="600dp"
+    android:scaleType="centerCrop"
     app:layout_constraintTop_toBottomOf="@id/app_name"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     android:src="@drawable/splash_illustration"
     android:contentDescription="splash_screen_image"/>
-
-  <View
-
-    android:layout_width="318dp"
-    android:layout_height="14dp"
-    android:background="@drawable/bar"
-    app:layout_constraintBottom_toBottomOf="@id/illustration"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    />
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

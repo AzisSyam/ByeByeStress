@@ -13,6 +13,8 @@
     android:layout_marginStart="0dp"
     android:layout_marginEnd="0dp"
     app:labelVisibilityMode="labeled"
+    app:itemIconSize="20dp"
+    app:compatShadowEnabled="true"
     android:background="?android:attr/windowBackground"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"

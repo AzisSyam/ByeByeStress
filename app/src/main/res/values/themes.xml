@@ -3,12 +3,19 @@
   <style name="Base.Theme.ByeByeStress" parent="Theme.Material3.DayNight.NoActionBar">
     <item name="colorPrimary">@color/primary_color</item>
     <item name="android:windowActionBar">false</item>
+    <item name="colorSecondaryContainer">@color/primary_color</item>
   </style>
-
 
   <style name="MainActivityTheme" parent="Base.Theme.ByeByeStress">
     <item name="android:navigationBarColor">@color/button_nav</item>
+  </style>
 
+  <style name="SplashScreenTheme" parent="Base.Theme.ByeByeStress">
+    <item name="android:navigationBarColor">@color/background_screen</item>
+  </style>
+
+  <style name="ButtonStyle" parent="Widget.Material3.Button.IconButton.Filled">
+    <item name="cornerRadius">12dp</item>
   </style>
 
   <style name="Theme.ByeByeStress" parent="Base.Theme.ByeByeStress" />

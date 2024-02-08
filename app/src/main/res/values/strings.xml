@@ -5,9 +5,13 @@
   <string name="title_stress_tes">Cek Stress</string>
   <string name="title_chat">Chat</string>
   <string name="title_profile">Akun</string>
-  <!-- TODO: Remove or change this placeholder text -->
+  <string name="title_stress_test">Stress Test</string>
   <string name="hello_blank_fragment">Hello blank fragment</string>
   <string name="title_activity_tes">TesActivity</string>
   <string name="title_dashboard">Dashboard</string>
   <string name="title_notifications">Notifications</string>
+  <string name="question_count">10 Pertanyaan</string>
+  <string name="title_description">DESKRIPSI</string>
+  <string name="description">Tes ini dirancang untuk membantu Anda memahami tingkat stres Anda saat ini. Tes ini terdiri dari 10 pertanyaan yang akan menanyakan tentang perasaan, pikiran, dan perilaku Anda dalam beberapa minggu terakhir. Jawaban Anda akan dianalisa untuk menentukan tingkat stres Anda.</string>
+  <string name="start">Mulai</string>
 </resources>

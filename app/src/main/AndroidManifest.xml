@@ -20,6 +20,7 @@
       android:label="@string/title_activity_main" />
     <activity
       android:name=".ui.splashscreen.SplashScreen"
+      android:theme="@style/SplashScreenTheme"
       android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
