@@ -14,4 +14,6 @@
   <string name="title_description">DESKRIPSI</string>
   <string name="description">Tes ini dirancang untuk membantu Anda memahami tingkat stres Anda saat ini. Tes ini terdiri dari 10 pertanyaan yang akan menanyakan tentang perasaan, pikiran, dan perilaku Anda dalam beberapa minggu terakhir. Jawaban Anda akan dianalisa untuk menentukan tingkat stres Anda.</string>
   <string name="start">Mulai</string>
+  <string name="next">Next</string>
+  <string name="back">Back</string>
 </resources>

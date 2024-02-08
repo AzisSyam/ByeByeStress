@@ -1,5 +1,6 @@
 package com.pkm.byebyestress.ui.stresstes
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pkm.byebyestress.databinding.FragmentStressTesBinding
+import com.pkm.byebyestress.ui.stresstes.quiz.QuizActivity
 
 class StressTesFragment : Fragment() {
 
@@ -28,7 +30,10 @@ class StressTesFragment : Fragment() {
       _binding = FragmentStressTesBinding.inflate(inflater, container, false)
       val root: View = binding.root
       Log.d("Stress tes fragment", "onCreateView: Ini adalah Stress tes fragment")
-
+      binding.btnStartTest.setOnClickListener {
+         val intent = Intent(requireContext(), QuizActivity::class.java)
+         startActivity(intent)
+      }
       return root
    }
 
