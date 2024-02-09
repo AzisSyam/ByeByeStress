@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.pkm.byebyestress.R
-import com.pkm.byebyestress.ui.MainActivity
+import com.pkm.byebyestress.ui.login.LoginActivity
 
 class SplashScreen : AppCompatActivity() {
    override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class SplashScreen : AppCompatActivity() {
             } catch (e: InterruptedException) {
                e.printStackTrace()
             } finally {
-               val intent = Intent(applicationContext, MainActivity::class.java)
+               val intent = Intent(applicationContext, LoginActivity::class.java)
                startActivity(intent)
                finish()
             }

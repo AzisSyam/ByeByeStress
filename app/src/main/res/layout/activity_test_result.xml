@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/background_screen"
+  tools:context=".ui.stresstes.result.TestResultActivity">
+
+  <View
+    android:layout_width="141dp"
+    android:layout_height="141dp"
+    android:layout_marginStart="-70dp"
+    android:layout_marginTop="-70dp"
+    android:background="@drawable/ellipse"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:layout_width="185dp"
+    android:layout_height="185dp"
+    android:layout_marginTop="-70dp"
+    android:layout_marginEnd="-70dp"
+    android:background="@drawable/ellipse"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/ellipse_corner"
+    android:layout_width="222dp"
+    android:layout_height="222dp"
+    android:layout_marginTop="120dp"
+    android:background="@drawable/ellipse"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+  </View>
+
+  <View
+    android:id="@+id/ellipse_body"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_margin="11dp"
+    android:background="@drawable/ellipse_2"
+    app:layout_constraintBottom_toBottomOf="@id/ellipse_corner"
+    app:layout_constraintEnd_toEndOf="@id/ellipse_corner"
+    app:layout_constraintStart_toStartOf="@id/ellipse_corner"
+    app:layout_constraintTop_toTopOf="@id/ellipse_corner"
+    app:layout_constraintVertical_bias="1.0" />
+
+  <TextView
+    android:id="@+id/score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="64sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@id/ellipse_body"
+    app:layout_constraintEnd_toEndOf="@id/ellipse_body"
+    app:layout_constraintStart_toStartOf="@id/ellipse_body"
+    app:layout_constraintTop_toTopOf="@id/ellipse_body"
+    tools:text="@string/score_test" />
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/recomendation_container"
+    style="@style/Widget.Material3.CardView.Filled"
+    android:layout_width="222dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="48dp"
+    android:backgroundTint="@color/white"
+    app:cardElevation="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/ellipse_corner">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/recomendation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_recomendation"
+        android:textColor="@color/primary_color"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/recomendation_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Tidak perlu intervensi"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    </LinearLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+  <ImageView
+    android:id="@+id/expression_image"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:layout_marginTop="48dp"
+    android:src="@drawable/stress_rendah"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/recomendation_container" />
+  
+  <View
+    android:layout_width="318dp"
+    android:layout_height="14dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="@drawable/bar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="32dp"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
