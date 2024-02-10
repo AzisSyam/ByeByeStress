@@ -24,4 +24,5 @@
   <string name="score_test">13</string>
   <string name="title_recomendation">Stress Rendah</string>
   <string name="activity_image">Activity Image</string>
+  <string name="recomendation_activity">Saran aktivitas</string>
 </resources>
