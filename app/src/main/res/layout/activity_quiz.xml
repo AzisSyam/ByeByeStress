@@ -41,6 +41,7 @@
                     android:fontFamily="sans-serif"
                     android:textColor="@color/black"
                     android:textStyle="bold"
+                    android:padding="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +70,7 @@
                 android:fontFamily="sans-serif"
                 android:layout_marginHorizontal="33dp"
                 android:elevation="3dp"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:textStyle="bold"
                 android:text="Tidak Pernah" />
 
@@ -84,7 +85,7 @@
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
                 android:textStyle="bold"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:text="Jarang" />
 
             <RadioButton
@@ -98,7 +99,7 @@
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
                 android:textStyle="bold"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:text="Kadang-Kadang" />
 
             <RadioButton
@@ -112,7 +113,7 @@
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
                 android:textStyle="bold"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:text="Sering" />
 
             <RadioButton
@@ -124,7 +125,7 @@
                 android:background="@drawable/radio_selector"
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:fontFamily="sans-serif"
                 android:textStyle="bold"
                 android:text="Sangat Sering" />
