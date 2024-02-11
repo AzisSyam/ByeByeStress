@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
          viewModel.getActivity()
          binding.rvActivity.layoutManager = LinearLayoutManager(requireContext())
          viewModel.userData.observe(viewLifecycleOwner) { activity ->
-            val adapter = ActivityAdapter(activity)
+            val adapter = ActivityAdapter(activity, requireContext())
             adapter.submitList(activity)
             binding.rvActivity.adapter = adapter
          }

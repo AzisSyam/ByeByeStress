@@ -15,6 +15,9 @@
     android:theme="@style/Theme.ByeByeStress"
     tools:targetApi="31">
     <activity
+      android:name=".ui.activitydetail.ActivityDetailActivity"
+      android:exported="false" />
+    <activity
       android:name=".ui.stresstes.result.TestResultActivity"
       android:exported="false" />
     <activity

@@ -2,6 +2,7 @@ plugins {
    id("com.android.application")
    id("org.jetbrains.kotlin.android")
    id("com.google.gms.google-services")
+   id("kotlin-parcelize")
 }
 
 android {
@@ -61,4 +62,9 @@ dependencies {
 
    implementation ("de.hdodenhof:circleimageview:3.1.0")
    implementation ("com.makeramen:roundedimageview:2.3.0")
+
+   implementation ("com.google.firebase:firebase-database-ktx:20.3.0")
+
+   implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+   implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 }

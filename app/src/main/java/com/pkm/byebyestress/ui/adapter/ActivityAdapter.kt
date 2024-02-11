@@ -1,24 +1,28 @@
 package com.pkm.byebyestress.ui.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.pkm.byebyestress.databinding.ActivityItemBinding
 import com.pkm.byebyestress.remote.response.ActivityItem
+import com.pkm.byebyestress.ui.activitydetail.ActivityDetailActivity
 
 class ActivityAdapter(
-   private val activityList: List<ActivityItem?>?,
+   private val activityList: List<ActivityItem?>?,     private val context: Context
 ) : ListAdapter<ActivityItem, ActivityAdapter.MyViewHolder>(DIFF_CALLBACK) {
    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
       val data = activityList?.get(position)
       if (data != null) {
          holder.bind(data)
          holder.itemView.setOnClickListener {
-
+            val intent = Intent(context, ActivityDetailActivity::class.java)
+            intent.putExtra("activityData", data) // using the (String name, Parcelable value) overload!
+            context.startActivity(intent)
          }
       }
    }
@@ -36,7 +40,6 @@ class ActivityAdapter(
             tvTitleActivity.text = data.title
             Glide.with(imageActivity)
                .load(data.imageUrl)
-               .transform(RoundedCorners(20))
                .into(binding.imageActivity)
          }
       }

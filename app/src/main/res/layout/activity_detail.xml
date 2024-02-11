@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/background_screen"
+  tools:context=".ui.activitydetail.ActivityDetailActivity">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/background_screen"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/topAppBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:navigationIcon="@drawable/baseline_keyboard_backspace_24"
+      app:navigationIconTint="@color/primary_color"
+      app:titleCentered="false" />
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <ImageView
+    android:id="@+id/activity_image"
+    android:layout_width="222dp"
+    android:layout_height="222dp"
+    android:layout_marginTop="32sp"
+    android:scaleType="centerCrop"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+  <TextView
+    android:id="@+id/activity_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="32dp"
+    android:fontFamily="sans-serif"
+    android:text="@string/title_profile"
+    android:textAlignment="center"
+    android:textColor="@color/primary_color"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/activity_image" />
+
+  <TextView
+    android:id="@+id/description_activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/description"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/activity_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
