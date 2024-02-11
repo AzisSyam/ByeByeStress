@@ -19,6 +19,34 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:value="0.0"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:thumbRadius="0dp"
+            app:trackColorActive="@color/white"
+            app:trackColorInactive="@color/blue_bunrang"
+            app:trackHeight="10dp" />
+
+        <TextView
+            android:id="@+id/number_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="-2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slider"
+            app:layout_constraintEnd_toEndOf="@+id/slider"
+            app:layout_constraintStart_toStartOf="@+id/slider"
+            tools:text="Question 7/10" />
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/imageView2"
             style="?attr/materialCardViewElevatedStyle"
@@ -37,14 +65,17 @@
                     android:id="@+id/soal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SOAL"
                     android:fontFamily="sans-serif"
+                    android:padding="16dp"
+                    android:text=""
                     android:textColor="@color/black"
                     android:textStyle="bold"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Kuis"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -69,7 +100,7 @@
                 android:fontFamily="sans-serif"
                 android:layout_marginHorizontal="33dp"
                 android:elevation="3dp"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:textStyle="bold"
                 android:text="Tidak Pernah" />
 
@@ -84,7 +115,7 @@
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
                 android:textStyle="bold"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:text="Jarang" />
 
             <RadioButton
@@ -98,7 +129,7 @@
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
                 android:textStyle="bold"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:text="Kadang-Kadang" />
 
             <RadioButton
@@ -112,7 +143,7 @@
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
                 android:textStyle="bold"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:text="Sering" />
 
             <RadioButton
@@ -124,7 +155,7 @@
                 android:background="@drawable/radio_selector"
                 android:button="@color/tosca_blue"
                 android:elevation="3dp"
-                android:paddingStart="14dp"
+                android:paddingStart="16dp"
                 android:fontFamily="sans-serif"
                 android:textStyle="bold"
                 android:text="Sangat Sering" />
@@ -139,9 +170,12 @@
             android:layout_marginStart="33dp"
             android:text="@string/back"
             android:textSize="18sp"
+            android:visibility="gone"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintStart_toStartOf="@+id/radioGroup"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:visibility="visible"
+            />
 
         <Button
             android:id="@+id/next"

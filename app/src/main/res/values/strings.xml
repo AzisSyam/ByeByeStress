@@ -25,4 +25,8 @@
   <string name="title_recomendation">Stress Rendah</string>
   <string name="activity_image">Activity Image</string>
   <string name="recomendation_activity">Saran aktivitas</string>
+    <string name="finish">Finish</string>
+    <string name="rekomendasi_stres_berat">Memerlukan bantuan professional untuk melakukan manajemen stres, sehingga perlu menghubungi profesional</string>
+  <string name="rekomendasi_stres_ringan">Melakukan manajemen stres mandiri dengan metode self-care.</string>
+  <string name="rekomendasi_stres_sedang">Melakukan manajemen stres mandiri dengan metode self-care dan mendapatkan rekomendasi profesional.</string>
 </resources>
