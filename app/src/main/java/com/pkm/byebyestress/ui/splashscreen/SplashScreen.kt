@@ -14,7 +14,8 @@ class SplashScreen : AppCompatActivity() {
       val splashThread = object : Thread() {
          override fun run() {
             try {
-               sleep(3000)
+//               sleep(3000)
+               sleep(100) //supaya ndk lama ku run percobaan
             } catch (e: InterruptedException) {
                e.printStackTrace()
             } finally {
