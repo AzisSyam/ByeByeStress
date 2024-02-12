@@ -39,6 +39,7 @@ class HomeFragment : Fragment() {
             val adapter = ActivityAdapter(activity, requireContext())
             adapter.submitList(activity)
             binding.rvActivity.adapter = adapter
+            Log.d("Home", "onCreateView: $activity")
          }
       } catch (e:Exception){
          Log.d("Terjadi error viewmodel", "onCreateView: ${e.message}")

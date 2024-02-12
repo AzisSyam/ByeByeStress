@@ -17,6 +17,7 @@
   <style name="ButtonStyle" parent="Widget.Material3.Button.IconButton.Filled">
     <item name="cornerRadius">12dp</item>
   </style>
+  
   <style name="ButtonStyleSecondary" parent="Widget.Material3.Button.IconButton.Filled">
     <item name="cornerRadius">12dp</item>
     <item name="android:backgroundTint">@color/white</item>
