@@ -8,7 +8,6 @@ import com.pkm.byebyestress.remote.response.ActivityResponse
 
 class DataRepository(private val db: FirebaseFirestore) {
 
-
    fun getActivity(): MutableLiveData<List<ActivityItem?>?>{
       val resultLiveData = MutableLiveData<List<ActivityItem?>?>()
 
